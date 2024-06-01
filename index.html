@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- Boootstrap.css -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Bootstrap-Icons -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse py-3 text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center " role="search">
+              <a class="btn bg-success-subtle text-success mx-1 py-2 px-3 fw-bold" href="#">Log in</a>
+              <a class="btn btn-success mx-1 py-2 
+              px-3 fw-bold opacity-75" href="#">Sign up</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Showcase Section -->
+    <header class="showcase bg-body-tertiary py-5 mb-5 ">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 animate__backInLeft">
+                <h2 class="fw-bolder w-75 mt-5">Get A Fastest Loan With A Smart Way By
+                     Seating At Home</h2>
+                     <p class="w-75 mt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium deleniti commodi quo in excepturi? Placeat saepe aut officia aspernatur?</p>
+                     <a class="btn btn-success opacity-75">Apply Loan Now <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6 col-sm-12 animate__backInRight">
+                <img src="./images/banner/banner.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Services Section 
+        row => 12 col => 12col/numbers
+    -->
+    
+    <section class="services my-5 py-4 text-center">
+        <div class="container">
+            <div class="row my-4 py-4">
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <i class="fa-solid fa-gem fa-3x my-2"></i>
+                    <h4>Sturdy Themes</h4>
+                    <p>Our themes are updated regularly to keep them bug free!</p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <i class="fa-solid fa-laptop fa-3x my-2"></i>
+                    <h4>Up To Date</h4>
+                    <p>All dependencies are kept current to keep things fresh.
+                    </p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <i class="fa-solid fa-globe fa-3x my-2"></i>
+                    <h4>Ready To Publish</h4>
+                    <p>You can use this design as is, or you can make changes!
+
+                    </p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <i class="fa-solid fa-heart fa-3x my-2"></i>
+                    <h4>Made With Love</h4>
+                    <p>Is it really open source if it's not made with love?
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="text-uppercase text-success fw-bolder pt-3">Our Services</p>  
+            <h1 class="fw-bolder">Our online and offline services</h1>     
+            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, et!</p>   
+          </div>
+          
+          <div class="col-lg-4 p-4 border border-light">
+            <h4><span class="badge bg-primary-subtle text-primary p-3">01</span></h4>
+            <h4 class="fw-bolder mt-4">Personal loans</h4>     
+            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, et!</p>   
+          </div>
+  
+          <div class="col-lg-4 p-4 border border-light border-1">
+            <h4><span class="badge bg-success-subtle text-success p-3">02</span></h4>
+            <h4 class="fw-bolder mt-4">Home Equity loans</h4>     
+            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, et!</p>   
+          </div>      
+  
+          <div class="col-lg-4 p-4 border border-light border-1">
+            <h4><span class="badge bg-primary-subtle text-primary p-3">03</span></h4>
+            <h4 class="fw-bolder mt-4">Student loans</h4>     
+            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, et!</p>   
+          </div>  
+          
+          <div class="col-lg-4 p-4 border border-light border-1">
+            <h4><span class="badge bg-success-subtle text-success p-3">04</span></h4>
+            <h4 class="fw-bolder mt-4">Mortgage loans</h4>     
+            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, et!</p>   
+          </div>
+  
+          <div class="col-lg-4 p-4 border border-light border-1">
+            <h4><span class="badge bg-primary-subtle text-primary p-3">05</span></h4>
+            <h4 class="fw-bolder mt-4">Payday loans</h4>     
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, quos.</p>   
+          </div>          
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about my-5 bg-body-tertiary ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <p class="text-uppercase text-success fw-bolder pt-3">About Ourselves</p>  
+            <h1 class="fw-bolder">Fast Funding & A Flexible Payment</h1>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, maxime magnam repellat laboriosam libero distinctio quis quos dolore consequuntur architecto.
+              <br><br>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat libero tempore nam tenetur reiciendis quibusdam inventore alias quae quaerat dolor!
+            </p>
+            <a class="btn btn-success mt-3">Know About Us</a>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <img src="images/about-us.png" alt="" class="img-fluid p-5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="row">
+        <div class="col-xl-6 col-12 p-5">
+          <p class="text-uppercase text-success fw-bolder pt-3">Difference of Us</p>  
+          <h1 class="fw-bolder text-capitalize">What makes us different from other?</h1>
+          <p class="text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reprehenderit a ullam ab aperiam aspernatur tempore quaerat consequatur. Eum doloremque saepe quod, libero necessitatibus delectus cumque vitae ea tempora esse recusandae, perspiciatis facilis? Deleniti, aspernatur officia. Obcaecati libero non quibusdam.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error quae facilis sunt, iure reprehenderit fugiat debitis inventore expedita? Incidunt, facilis quia. Libero ratione enim beatae voluptate pariatur veritatis quaerat autem aut nesciunt! Odio, inventore sit non reprehenderit asperiores ab!
+          </p>
+        </div>
+
+        <div class="col-xl-1"></div>
+        
+        <div class="col-xl-1 col-2 pt-5 mt-5 mb-md-5">
+          <h1><span class="badge bg-primary p-3"><i class="bi bi-shield-shaded"></i></span></h1>
+          <br><br><br>
+          <h1><span class="badge bg-success p-3"><i class="bi bi-telephone-fill"></i></span></h1>
+          <br><br><br>
+          <h1><span class="badge bg-primary p-3"><i class="bi bi-cash-coin"></i></span></h1>
+        </div>
+        <div class="col-xl-4 col-10 pt-5 mt-5">
+          <div class="container">
+            <h4 class="fw-bolder text-capitalize">Fast and secure process</h4>
+            <p class="text-muted pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facilis.</p>  
+          </div>
+          <div class="container mt-5">
+            <h4 class="fw-bolder text-capitalize">Quick question answers</h4>
+            <p class="text-muted pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facilis.</p>
+          </div>
+          <div class="container pt-2 mt-5">
+            <h4 class="fw-bolder text-capitalize ">we get you your cash quickly</h4>
+            <p class="text-muted pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facilis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </section>
+
+
+    <section class="questions">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-uppercase text-success fw-bolder pt-3">questions you have</p>  
+            <h2 class="fw-bolder">Frequently asked questions</h2>
+          </div>
+
+          <div class="col-md-6 m-md-4 shadow-lg">
+
+            <div class="container pt-5 pb-5">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-capitalize fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      can i apply if my credit isn't perfect?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-muted">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut dignissimos maxime recusandae ratione tempore?
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button text-capitalize fw-bolder collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How do i know that i have been approved?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-muted">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut dignissimos maxime recusandae ratione tempore?
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button text-capitalize fw-bolder collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      do i need to fax or email any documents?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-muted">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut dignissimos maxime recusandae ratione tempore?
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button text-capitalize fw-bolder collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                      do you provide loans to military personnal?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-muted">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut dignissimos maxime recusandae ratione tempore?
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button text-capitalize fw-bolder collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                      can i remove footer credit purchase?
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-muted">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut dignissimos maxime recusandae ratione tempore?
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button text-capitalize fw-bolder collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                      what is the difference the free versions?
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-muted">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut dignissimos maxime recusandae ratione tempore?
+                    </div>
+                  </div>
+                </div> 
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 m-md-4 mt-4 shadow-lg h-75 ">
+            <div class="container pt-5">
+              <h5 class="fw-bolder">Still have questions?</h5>
+              <p class="text-capitalize pe-4 text-muted ">call us we will be happy to help <a href="">+0123456</a><br> Monday - Friday
+              <br>9AM TO 8PM Eastern time
+              </p>
+              <h5 class="fw-bolder">Canada Office</h5>
+              <p class="text-capitalize pe-4 text-muted ">
+                231 ross street <br>
+                k7A 1C2 <br>
+                smiths falls
+              </p>
+              <h5 class="fw-bolder">UK Office</h5>
+              <p class="text-capitalize pe-4 text-muted ">
+                57 folkestone road <br>
+                AB54 5XQ<br>
+                winston
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="bg-body-tertiary">
+      <div class="container-lg mt-5 p-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="text-success fw-bolder pt-3">Service</p>  
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">Personal loans</a></p>
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">Home equity loans</a></p>
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">student loans</a></p>
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">mortgage loans</a></p>
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">payday loans</a></p>
+          </div>
+          <div class="col-lg-3">
+            <p class="text-success fw-bolder pt-3">About</p>  
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">benefits</a></p>
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">careers</a></p>
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">our story</a></p>
+            <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">team</a></p>
+          </div>
+          <div class="col-lg-3">
+            <p class="text-success fw-bolder pt-3">Help</p>  
+              <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">contact us</a></p>
+              <p><a href="#" class="link-dark link-underline-opacity-0 text-capitalize pt-5">FAQs</a></p>
+          </div>
+          <div class="col-lg-3 bg-body-secondary mt-3 mb-5 p-lg-4">
+            <p class="text-success fw-bolder pt-3">Subscribe</p>  
+            <div class="input-group flex-nowrap">
+              <input type="text" class="form-control" placeholder="Email address" aria-label="Email" aria-describedby="addon-wrapping">
+              <span class="input-group-text bg-opacity-50 btn btn-success" id="addon-wrapping"><i class="bi bi-arrow-right"></i></span>
+            </div>
+            <p class="text-muted pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis provident doloremque veritatis nostrum maiores officia!</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4 col-sm-12">
+            <a class="d-flex justify-content-center justify-content-md-start m-md-0 m-2" href="#">
+              <img src="./images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center m-md-0 m-2">
+            <a href="#" class="link-dark link-underline-opacity-0"><small class="text-muted ">Privacy Policy</small></a>
+            <a href="#" class="link-dark link-underline-opacity-0"><small class="text-muted ms-3">Term & Conditions</small></a>
+          </div>
+          <div class="col-md-4 col-sm-12 d-flex  justify-content-md-end justify-content-center">
+            <button class="btn btn-light border m-1"><i class="bi bi-facebook"></i></button>
+            <button class="btn btn-light border m-1"><i class="bi bi-twitter"></i></button>
+            <button class="btn btn-light border m-1"><i class="bi bi-instagram"></i></button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Popper.js & Bootstrap.js -->
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
